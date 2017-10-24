@@ -1,0 +1,108 @@
+#nombretxt{
+	width:92%;
+	height:114px;
+}
+#boton-cargar{
+ 
+ 
+  background-image: url(imagenes/gradiente.png);
+  border: 1px solid #036;
+  color: #036;
+  cursor: pointer;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  height: 26px;
+
+  text-transform: uppercase;
+  width: 100%;
+
+  margin-top: 3%;
+}
+ #btnAgregar{
+ 
+ 
+  background-image: url(imagenes/gradiente.png);
+  border: 1px solid #036;
+  color: #036;
+  cursor: pointer;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  height: 30px;
+  margin: 0 2px 0 2px;
+  text-transform: uppercase;
+  width: 60%;
+  margin-left: 22%;
+  margin-top: 3%;
+}
+
+
+
+input{
+  border-radius: 6px;
+  width:195px;
+padding:23px;
+}
+
+#formu{
+ border-radius: 6px;
+	width:74%;
+	height:56%;
+  margin-left: 12%;
+margin-right: 33%;
+margin-bottom: 102px;
+}
+
+
+form{
+margin-left: 12px;
+border-style:solid;
+
+}
+#vestibuluco{
+
+ width:100%;
+}
+#com{
+ font-weight: bold;
+width:20%;
+height:40px;
+background-color: black;
+}
+
+#for{text-align: center;
+  width:10%;
+}
+
+label{
+  color:green;
+  font-size: 17pt;
+}
+#f{
+
+  width:40%;
+
+height:80%;
+
+}
+.media-body{
+
+   width:100%;
+   
+
+}
+
+ 
+
+td{
+  margin-bottom: 12px;
+}
+
+.media{
+  background-color: red;
+}
+
+#campos{
+color: red;
+}

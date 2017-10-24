@@ -1,0 +1,14 @@
+
+var myLatlng = new google.mapa1.posicion(183,178,164,177,147,165,136,169,131,176,116,174,109,186,103,190,82,207,72,209,63,215,60,233,41,242,28,259,26,280,34,295,18,299,84,324,94,323,111,306,123,317,132,324,148,321,149,304,159,294,158,279,161,265,167,250,160,239,187,234,190,197,197,194,188,186);
+var mapOptions = {
+  zoom: 4,
+  center: myLatlng
+}
+var map = new google.mapa1.Map(document.getElementById("SantaAna"), mapOptions);
+
+var marker = new google.mapa1.Marker({
+    position: myLatlng,
+    title:"Hello World!"
+});
+
+marker.setMap(SantaAna);

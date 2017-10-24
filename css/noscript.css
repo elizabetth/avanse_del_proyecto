@@ -1,0 +1,148 @@
+@import url(font-awesome.min.css);
+
+/*
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+*/
+
+/* Wrapper */
+
+	body{
+		background-image: url("../img/overlay.png");
+
+
+		}
+
+		#bb{
+	width:100%;
+	height:96%;
+}
+		 
+		 #s{
+		 	background:red;
+		 	width:343px;
+		 }
+       #vestibuluco{
+       	background:
+		 	green;
+       }
+		 .media{
+		 	
+		 	background:
+		 	red;
+		 	
+		 }
+
+
+		 .slider {
+	width: 95%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.slider ul {
+	display: flex;
+	padding: 0;
+	width: 300%;
+	
+	animation: cambio 10s infinite alternate linear;
+}
+
+.slider li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider img {
+	width: 100%;
+}
+
+@keyframes cambio {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
+}
+
+
+		 #zn{
+		 	background:green;
+		 	width:333px;
+		 }
+		 #nn{
+		 	width:100%;
+		 	height:100%;
+		 	
+		 
+		 }
+
+		.main-content{
+			background:white;
+		}
+.main-content{
+	background-image: url("../img/bg.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../img/overlay.png");
+		background-size: auto,								auto,														100% auto;
+		background-position: center,								center,														top center;
+		background-repeat: repeat,								no-repeat,													no-repeat;
+		background-attachment: fixed,								fixed,														fixed;
+}
+
+
+/* Intro */
+body.is-loading #intro {
+		opacity: 1;
+	}
+
+		body.is-loading #intro:not(.hidden) + #header + #nav {
+			-moz-transform: none;
+			-webkit-transform: none;
+			-ms-transform: none;
+			transform: none;
+			opacity: 1;
+		}
+
+		.spacing-r{
+			width:45%;
+			height:276px;
+			
+		}
+li{
+	color:white;
+}
+
+		#h11{
+			color:#f76e5d;
+		}
+
+		#h22{
+			color:green;
+		}
+
+		.media{
+			background-image: url("../img/bg.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/bg.jpeg");
+		background-size: auto,								auto,														100% auto;
+		background-position: center,								center,														top center;
+		background-repeat: repeat,								no-repeat,													no-repeat;
+		background-attachment: fixed,								fixed,														fixed;
+}
+
+
+		.wrap-bg{
+			background-image: url("../img/bg.jpg"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("images/bg.jpeg");
+		background-size: auto,								auto,														100% auto;
+		background-position: center,								center,														top center;
+		background-repeat: repeat,								no-repeat,													no-repeat;
+		background-attachment: fixed,								fixed,														fixed;
+		}
+
+		
+
+		

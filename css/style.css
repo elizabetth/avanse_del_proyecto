@@ -1,0 +1,514 @@
+svg, defs, clipPath {
+	height: 0; 
+	position: absolute; 
+	top: 0; left: 0;  
+}
+
+/*
+Para mover todo el recuadro que encierra el mapa y cambiar el color de fondo 
+modificar solo #figura, las dimensiones de width y height
+son las mismas dimensiones de la imagen, no alterarlas.
+*/
+#figura {
+	position: relative; 
+	width: 1024px; height: 560px; 
+	border-radius: 1px; 
+	margin: 1px auto; 
+	overflow: hidden; 
+	
+	top: 0px; left: 0px;
+}
+
+
+#texto
+{
+  position:absolute;
+  display: none; 
+  border: solid  #81DAF5 4px;
+  border-radius: 44px 0px 44px 0px;
+  font-family: 'Advent Pro', sans-serif;
+
+  background-color: #006699;
+  color:white;
+  padding: 0.5em 1em;
+
+
+  -webkit-transition: 0.9s;
+  -moz-transition: 0.9s;
+  -o-transition: 0.9s;
+  transition: 0.9s;
+}
+#bb{
+	width:100%;
+	height:89%;
+}
+#h1{
+	color: white;
+	position: absolute;
+	top: 30px; left: 600px;
+}
+#figura::before {
+	display: block; 
+	content: ""; 
+	position: absolute; 
+	top: 0; left: 0; 
+	background-image: url('maps/map4.png'); 
+	background-size: cover;  
+	opacity: .4;
+}
+
+#capaRecorte {
+	display: block; 
+	position: absolute; 
+	top: 0; left: 0; 
+}
+
+#imagen { 
+	position: absolute;
+	top: 0; left: 0; 
+	cursor: crosshair; 
+}
+
+a{
+	color:white;
+}
+
+#principal{
+	margin-bottom: 52%;
+}
+#figura area {
+	display: block; 
+}
+
+ 
+
+#figura area:nth-of-type(2):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(71px,331px,33px,315px,22px,311px,6px,305px,15px,301px,17px,296px,10px,285px,10px,277px,12px,270px,12px,262px,21px,254px,24px,246px,43px,235px,48px,219px,59px,212px,66px,210px,83px,198px,94px,187px,101px,175px,109px,175px,116px,174px,123px,169px,135px,167px,152px,177px,170px,178px,174px,185px,179px,190px,184px,193px,185px,203px,180px,218px,176px,225px,174px,236px,161px,238px,152px,239px,147px,243px,155px,252px,151px,261px,148px,270px,147px,283px,148px,299px,141px,302px,135px,310px,134px,327px,118px,331px,113px,326px,108px,325px,98px,315px,89px,323px,82px,331px);
+	clip-path: url(#ahuachapan); 
+}
+
+#figura area:nth-of-type(3):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(218px,398px,194px,394px,188px,394px,171px,396px,148px,396px,138px,395px,132px,390px,129px,375px,127px,368px,113px,356px,90px,343px,70px,332px,82px,329px,98px,315px,107px,324px,114px,327px,118px,331px,133px,327px,135px,316px,139px,305px,148px,300px,147px,287px,149px,275px,149px,268px,153px,257px,156px,252px,148px,245px,149px,240px,187px,236px,196px,241px,201px,249px,228px,274px,230px,270px,238px,267px,246px,269px,280px,287px,290px,295px,286px,304px,280px,302px,273px,308px,273px,316px,268px,316px,256px,331px,258px,336px,256px,341px,256px,345px,244px,356px,242px,371px);
+	clip-path: url(#sonsonate); 
+}
+
+#figura area:nth-of-type(4):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(411px,441px,385px,430px,351px,415px,342px,415px,337px,417px,326px,413px,310px,409px,289px,409px,265px,409px,224px,401px,218px,400px,242px,371px,245px,356px,255px,346px,256px,340px,258px,336px,256px,331px,268px,316px,273px,314px,274px,307px,282px,302px,286px,302px,289px,296px,282px,289px,283px,282px,284px,275px,289px,271px,290px,250px,286px,237px,298px,223px,314px,214px,310px,202px,315px,188px,321px,181px,325px,178px,327px,174px,329px,171px,337px,169px,349px,165px,354px,173px,363px,173px,365px,176px,361px,182px,369px,209px,367px,213px,385px,223px,386px,228px,380px,230px,376px,251px,374px,262px,367px,273px,367px,296px,361px,303px,365px,311px,363px,316px,374px,329px,380px,330px,383px,338px,378px,342px,376px,346px,378px,350px,383px,352px,381px,359px,380px,370px,385px,375px,381px,383px,381px,392px,387px,404px,391px,414px,395px,413px,397px,410px,407px,412px,413px,412px,416px,418px,416px,422px,411px,424px,414px,433px);
+	clip-path: url(#la_libertad); 
+}
+
+#figura area:nth-of-type(5):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(410px,411px,397px,408px,393px,415px,388px,405px,383px,399px,380px,391px,384px,379px,383px,373px,381px,370px,382px,357px,385px,353px,376px,350px,377px,342px,382px,340px,380px,330px,375px,329px,363px,318px,365px,311px,360px,305px,367px,295px,368px,276px,376px,256px,380px,230px,387px,227px,385px,221px,367px,214px,370px,209px,361px,184px,365px,178px,375px,171px,383px,173px,387px,176px,399px,172px,405px,175px,410px,173px,418px,169px,422px,171px,413px,181px,415px,194px,408px,208px,411px,223px,428px,242px,422px,248px,416px,251px,414px,252px,417px,260px,425px,262px,431px,265px,432px,272px,442px,284px,448px,281px,465px,320px,457px,321px,444px,322px,439px,332px,440px,338px,439px,345px,442px,351px,431px,361px,421px,360px,413px,362px,411px,365px,419px,380px,421px,388px,416px,394px,417px,399px,411px,404px);
+	clip-path: url(#san_salvador); 
+}
+
+#figura area:nth-of-type(6):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(544px,510px,533px,502px,529px,502px,527px,496px,516px,496px,483px,478px,460px,468px,442px,459px,413px,441px,414px,433px,411px,424px,416px,422px,414px,416px,411px,411px,412px,406px,417px,397px,417px,392px,420px,389px,420px,383px,418px,376px,414px,371px,411px,364px,413px,361px,419px,362px,427px,361px,432px,361px,442px,350px,440px,344px,441px,338px,438px,331px,442px,324px,449px,321px,457px,322px,464px,322px,468px,326px,478px,339px,484px,338px,490px,343px,496px,347px,502px,349px,506px,342px,510px,338px,517px,336px,521px,339px,524px,347px,523px,362px,530px,367px,537px,368px,543px,370px,548px,376px,553px,388px,556px,395px,557px,401px,554px,408px,552px,415px,554px,431px,560px,437px,563px,443px,566px,447px,568px,458px,566px,468px,564px,472px,560px,471px,563px,480px,564px,486px,558px,487px,550px,494px,547px,504px);
+clip-path: url(#la_paz); 
+}
+
+#figura area:nth-of-type(7):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(553px,515px,544px,510px,555px,489px,564px,484px,561px,478px,560px,471px,566px,470px,569px,459px,568px,451px,560px,438px,554px,431px,552px,412px,558px,399px,552px,386px,547px,375px,545px,370px,537px,368px,525px,367px,523px,363px,523px,342px,521px,337px,528px,329px,534px,327px,533px,324px,530px,319px,538px,299px,539px,295px,545px,295px,555px,290px,559px,292px,579px,284px,585px,281px,599px,286px,605px,284px,612px,286px,618px,283px,626px,286px,635px,293px,646px,295px,649px,303px,655px,304px,663px,305px,672px,306px,677px,315px,681px,317px,684px,315px,687px,326px,690px,331px,680px,337px,670px,343px,664px,353px,657px,362px,654px,369px,645px,370px,633px,372px,627px,380px,629px,384px,620px,387px,616px,397px,613px,417px,611px,426px,605px,438px,595px,449px,589px,466px,591px,475px,590px,480px,584px,485px,579px,495px,570px,497px,559px,505px,560px,516px);
+	clip-path: url(#san_vicente); 
+}
+
+#figura area:nth-of-type(8):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(693px,548px,674px,543px,658px,539px,643px,534px,609px,529px,564px,520px,558px,510px,563px,502px,574px,497px,580px,492px,588px,481px,592px,478px,588px,468px,593px,454px,606px,436px,610px,426px,615px,399px,616px,391px,624px,386px,628px,384px,630px,377px,635px,372px,655px,369px,663px,356px,668px,344px,690px,332px,690px,327px,698px,327px,706px,327px,715px,332px,720px,340px,727px,342px,732px,342px,735px,340px,739px,349px,740px,362px,739px,366px,734px,369px,734px,385px,737px,392px,740px,412px,736px,415px,736px,424px,729px,439px,733px,440px,737px,438px,736px,447px,735px,457px,737px,465px,748px,473px,749px,479px,760px,479px,764px,479px,770px,478px,774px,481px,772px,488px,767px,496px,760px,502px,762px,516px,776px,514px,775px,508px,773px,503px,775px,498px,775px,494px,784px,491px,791px,494px,798px,492px,798px,499px,806px,506px,802px,520px,814px,524px,821px,526px,830px,535px,837px,544px,843px,550px,841px,555px,828px,553px,812px,555px,807px,557px,764px,550px,747px,550px,750px,544px,755px,540px,749px,532px,739px,534px,741px,539px,734px,545px,729px,550px,720px,552px,710px,544px,710px,537px,714px,534px,699px,515px,691px,510px,687px,516px,692px,525px,699px,531px,693px,532px,680px,531px,673px,527px,672px,519px,666px,509px,650px,504px,635px,501px,629px,500px,627px,508px,622px,509px,607px,507px,597px,509px,598px,514px,611px,517px,619px,519px,627px,519px,635px,514px,646px,512px,662px,523px,664px,529px,659px,530px,681px,538px,691px,542px);
+	clip-path: url(#usulutan); 
+}
+
+#figura area:nth-of-type(9):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(853px,549px,846px,552px,835px,540px,819px,524px,802px,522px,803px,512px,805px,505px,798px,500px,798px,493px,792px,495px,785px,493px,780px,492px,775px,496px,774px,504px,777px,513px,763px,516px,761px,503px,773px,489px,772px,483px,771px,478px,757px,480px,748px,478px,749px,472px,734px,462px,737px,439px,730px,440px,736px,422px,736px,416px,740px,412px,738px,392px,733px,382px,734px,370px,741px,366px,740px,361px,736px,355px,739px,347px,736px,339px,730px,343px,722px,341px,712px,330px,703px,327px,693px,326px,684px,322px,685px,317px,683px,314px,679px,317px,674px,310px,674px,298px,676px,292px,681px,288px,681px,279px,686px,273px,690px,257px,694px,254px,700px,259px,709px,254px,713px,256px,721px,246px,730px,249px,736px,247px,743px,250px,747px,251px,750px,246px,764px,246px,767px,243px,767px,240px,776px,235px,782px,235px,785px,233px,795px,262px,782px,271px,789px,287px,794px,293px,800px,298px,801px,310px,795px,313px,787px,314px,783px,320px,785px,333px,808px,356px,813px,362px,820px,359px,824px,361px,832px,361px,840px,368px,837px,375px,845px,384px,882px,382px,884px,388px,885px,412px,877px,422px,886px,450px,881px,460px,877px,469px,883px,478px,879px,484px,877px,517px,862px,531px,856px,545px);
+	clip-path: url(#san_miguel); 
+}
+
+#figura area:nth-of-type(10):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(936px,556px,930px,558px,894px,554px,863px,551px,856px,549px,858px,538px,878px,519px,879px,487px,884px,480px,882px,475px,876px,471px,881px,462px,887px,452px,878px,424px,881px,419px,885px,412px,886px,394px,883px,384px,888px,381px,894px,376px,900px,371px,907px,362px,908px,351px,918px,339px,916px,334px,920px,315px,914px,311px,908px,309px,926px,278px,921px,263px,925px,256px,917px,245px,932px,244px,938px,241px,945px,241px,959px,242px,966px,237px,979px,237px,982px,246px,994px,253px,1007px,273px,1016px,280px,1016px,291px,1011px,301px,1007px,307px,1007px,323px,999px,334px,997px,367px,991px,373px,991px,379px,985px,381px,986px,397px,982px,403px,988px,406px,992px,409px,998px,405px,1003px,411px,1012px,419px,1009px,435px,1001px,437px,992px,439px,986px,445px,982px,449px,962px,446px,962px,438px,956px,443px,950px,456px,950px,473px,958px,481px,968px,483px,973px,487px,974px,493px,984px,497px,978px,510px,971px,520px,958px,526px,942px,534px,934px,538px,925px,540px,923px,543px,929px,547px);
+	clip-path: url(#la_union); 
+}
+
+#figura area:nth-of-type(11):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(883px,381px,863px,383px,846px,383px,838px,378px,840px,366px,833px,361px,825px,363px,823px,359px,818px,360px,812px,362px,807px,355px,789px,337px,785px,335px,783px,317px,789px,315px,795px,314px,801px,310px,801px,299px,789px,289px,782px,273px,795px,262px,788px,233px,789px,223px,806px,222px,807px,218px,801px,211px,800px,202px,806px,199px,823px,203px,827px,205px,852px,197px,866px,201px,867px,212px,870px,215px,870px,222px,877px,228px,891px,241px,891px,251px,900px,248px,907px,245px,913px,242px,918px,244px,924px,256px,921px,265px,925px,278px,920px,288px,912px,298px,905px,308px,912px,309px,919px,312px,920px,321px,916px,332px,916px,336px,915px,343px,907px,351px,907px,362px,902px,369px,897px,376px,889px,381px);
+	clip-path: url(#morazan); 
+}
+
+#figura area:nth-of-type(12):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(673px,305px,661px,306px,657px,303px,651px,305px,645px,300px,646px,296px,640px,295px,630px,291px,622px,284px,610px,286px,604px,284px,599px,286px,586px,282px,582px,282px,568px,288px,560px,291px,555px,291px,548px,295px,540px,296px,534px,292px,526px,286px,514px,283px,510px,280px,514px,276px,514px,271px,508px,270px,504px,264px,493px,260px,489px,255px,484px,252px,486px,245px,483px,239px,491px,229px,501px,222px,509px,217px,523px,223px,529px,221px,534px,221px,536px,216px,540px,214px,550px,215px,554px,210px,567px,207px,574px,204px,578px,199px,586px,196px,597px,197px,602px,195px,606px,195px,618px,191px,622px,187px,628px,188px,636px,187px,642px,193px,648px,193px,658px,200px,660px,205px,671px,204px,680px,205px,687px,211px,690px,215px,685px,221px,684px,235px,691px,246px,691px,256px,687px,266px,686px,276px,680px,280px,681px,287px,674px,293px);
+	clip-path: url(#cabanas); 
+}
+
+#figura area:nth-of-type(13):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(532px,328px,527px,331px,524px,334px,512px,337px,506px,339px,504px,348px,496px,347px,490px,343px,485px,338px,478px,340px,466px,319px,449px,282px,442px,283px,431px,270px,430px,264px,425px,261px,419px,262px,413px,252px,418px,250px,428px,242px,411px,220px,409px,209px,414px,196px,414px,188px,413px,181px,421px,171px,425px,167px,438px,170px,449px,173px,459px,177px,467px,187px,469px,199px,474px,212px,484px,220px,499px,219px,496px,225px,488px,231px,484px,241px,484px,251px,491px,257px,495px,260px,502px,263px,506px,268px,513px,271px,514px,276px,510px,279px,519px,284px,530px,289px,538px,297px,536px,308px,531px,317px,534px,325px);
+	clip-path: url(#cuscatlan); 
+}
+
+#figura area:nth-of-type(14):hover ~ #capaRecorte {
+-webkit-clip-path: polygon(612px,181px,614px,189px,608px,194px,602px,195px,596px,198px,587px,197px,579px,199px,576px,203px,570px,207px,563px,208px,554px,209px,551px,214px,545px,214px,537px,216px,533px,221px,525px,222px,520px,221px,511px,217px,499px,222px,496px,219px,484px,220px,476px,213px,472px,208px,468px,189px,462px,178px,453px,175px,442px,171px,427px,167px,417px,169px,407px,175px,399px,172px,388px,176px,381px,172px,372px,172px,367px,175px,364px,172px,354px,173px,352px,168px,348px,166px,336px,170px,327px,170px,324px,179px,313px,180px,303px,179px,298px,172px,303px,159px,310px,152px,308px,140px,323px,128px,324px,125px,341px,120px,346px,113px,346px,102px,347px,98px,345px,94px,364px,85px,367px,76px,367px,73px,373px,58px,372px,54px,360px,46px,352px,38px,351px,30px,333px,14px,346px,15px,356px,18px,370px,26px,379px,28px,383px,26px,392px,30px,392px,35px,417px,42px,432px,27px,439px,24px,445px,32px,446px,41px,444px,47px,449px,50px,464px,53px,467px,60px,471px,69px,470px,75px,473px,81px,480px,83px,491px,96px,489px,102px,498px,108px,508px,108px,520px,109px,521px,114px,539px,119px,541px,127px,544px,135px,549px,144px,551px,149px,558px,148px,565px,147px,570px,146px,573px,151px,581px,151px,591px,148px,594px,156px,591px,164px,592px,172px,608px,177px);
+	clip-path: url(#chalatenango); 
+}
+
+
+/*SANTA ANA*/
+#SAna { 
+	position: absolute;
+    top: 160px;
+    left: 230px;
+}
+
+#SAna a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#SAna a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*AHUACHAPAN*/
+#Ahuc { 
+	position: absolute;
+    top: 270px;
+    left: 72px;
+}
+#Ahuc a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Ahuc a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*SONSONATE*/
+#Sons { 
+	position: absolute;
+    top: 325px;
+    left: 185px;
+}
+#Sons a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Sons a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*LA LIBERTAD*/
+#Llib { 
+	position: absolute;
+    top: 360px;
+    left: 310px;
+}
+#Llib a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Llib a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*SAN SALVADOR*/
+#Ssal { 
+	position: absolute;
+    top: 310px;
+    left: 395px;
+}
+#Ssal a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Ssal a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*LA PAZ*/
+#Lpaz { 
+	position: absolute;
+    top: 410px;
+    left: 465px;
+}
+#Lpaz a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Lpaz a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*SAN VICENTE*/
+#Svic { 
+	position: absolute;
+    top: 345px;
+    left: 578px;
+}
+#Svic a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Svic a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*USULUTAN*/
+#Usul { 
+	position: absolute;
+    top: 460px;
+    left: 665px;
+}
+#Usul a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Usul a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*SAN MIGUEL*/
+#Smig { 
+	position: absolute;
+    top: 415px;
+    left: 795px;
+}
+#Smig a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Smig a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: -225px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*LA UNION*/
+#Luni { 
+	position: absolute;
+    top: 415px;
+    left: 920px;
+}
+#Luni a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Luni a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: -225px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*MORAZAN*/
+#Mora { 
+	position: absolute;
+    top: 290px;
+    left: 845px;
+}
+#Mora a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Mora a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: -225px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*CABANAS*/
+#Caba { 
+	position: absolute;
+    top: 240px;
+    left: 585px;
+}
+#Caba a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Caba a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*CUSCATlAN*/
+#Cusc { 
+	position: absolute;
+    top: 255px;
+    left: 460px;
+}
+#Cusc a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Cusc a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
+
+/*CHALATENANGO*/
+#Chal { 
+	position: absolute;
+    top: 125px;
+    left: 420px;
+}
+#Chal a span {
+	display: none;
+	color: #FFFFFF;
+	border: 1px solid white; 
+	border-radius: 5px;
+}
+
+#Chal a:hover span {
+	display: block;
+    position: absolute; 
+    width: 200px; 
+    background: #2E2E2E url();
+    height: 50px; 
+    left: 50px;
+    top: -10px;
+    color: #FFFFFF; 
+    padding-top: 9px;
+    padding-left: 9px;
+}
